@@ -44,9 +44,3 @@ $(document).on('click', '.btnEntrar', function(){
     $('body').animate({scrollTop: altura}, '500');
   });
 });
-
-$(document).on('click', '.btn-sair', function(){
-  $('#form1').slideToggle(function() {
-    $('body').animate({scrollTop: 0}, '800');
-  });
-});
