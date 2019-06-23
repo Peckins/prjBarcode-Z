@@ -1,0 +1,37 @@
+/* Arquivo de personalização da página de cadastro */
+
+/* conteiner inicial */
+.inicio{
+  margin-top: 45%;
+  text-align: center;
+}
+
+/* botão para sair */
+#btnCancelar{
+  padding: 4%;;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 15px;
+}
+
+/* botão e ícone do código de barras */
+#btnScan{
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+}
+#icon{
+  height: 40%;
+  width: 40%;
+  margin: 0 auto;
+}
+.cabecalho{
+  border-bottom: solid 1px;
+  border-bottom-color: black;
+  margin-bottom: 2%;
+}
+
+/* formatando sessions */
+.form{
+  background-color: transparent;
+}

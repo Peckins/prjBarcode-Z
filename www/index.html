@@ -6,12 +6,87 @@
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
+
+    <!-- Biblioteca bootstrap css -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <!-- Arquivo de estilização do app -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Biblioteca jquery -->
+    <script src="components/jquery-3.4.1.min.js"></script>
+
+    <!-- Biblioteca bootstrap js -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <!-- Arquivo de funções do app -->
+    <script src="components/app.js"></script>
+
     <script>
+      $(document).ready(function(){
+        ConfigurarPagina();
+      });
     </script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+    <div class="form" id="form1">
+      <div class="container inicio">
+
+        <div class="row">
+          <div class="col-xs-2"></div>
+
+          <div class="col-xs-8 text-center">
+            <div class="jumbotron">
+              <h3 class="titulo">Barcode App</h3>
+            </div>
+
+            <p>Aplicativo mobile que registra e consulta códigos de barras.</p>
+
+            <hr>
+
+            <button class="btn btn-danger btnEntrar">Começar</button>
+          </div>
+
+          <div class="col-xs-2"></div>
+        </div>
+
+      </div>
+    </div>
+
+          <div class="form" id="menu">
+
+            <div class="bar">
+              <center>
+                <h4>Opções</h4>
+              </center>
+            </div>
+
+            <div class="container menu">
+
+              <!-- Botão para cadastrar produtos -->
+              <button id="cadastrar" class="btn btn-default btn-option btn-block">
+                <span class="btn btn-danger">/></span>
+                <label>Cadastrar Produto</label>
+              </button>
+
+              <!-- Botão para listar produtos cadastrados -->
+              <a id="lista" href="#" class="btn btn-default btn-option btn-block">
+                <span class="btn btn-danger">/\</span>
+                <label>Ver Produtos</label>
+              </a>
+
+              <!-- Botão para ver informações do desenvolvedor -->
+              <a id="peckins" href="#" class="btn btn-default btn-option btn-block">
+                <span class="btn btn-danger">/P</span>
+                <label>Sobre o Desenvolvedor</label>
+              </a>
+            </div>
+
+            <div id="footer">
+              <center>
+                <button class="btn btn-danger btn-block btn-sair">Sair</button>
+              </center>
+            </div>
+          </div>
 </body>
 </html>

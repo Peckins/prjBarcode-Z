@@ -1,2 +1,67 @@
-/**/
+/*Arquivo de personalização do app*/
 
+.titulo{
+  font-size: 20pt;
+}
+/* botão inicial */
+.btnEntrar{
+  background-color: orangered;
+  color: white;
+  padding: 5%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 12pt;
+}
+.btnEntrar:hover{
+  background-color: orangered;
+}
+/* container do inicio do aplicativo */
+.inicio{
+  margin-top: 40%;
+  border: solid 1px;
+  border-color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 15px;
+  background-color: lightgrey;
+}
+body{
+  background-image: url('../img/bg.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 0;
+}
+/* Barra de informações do menu */
+.bar{
+  border-bottom: solid 1px;
+  border-bottom-color: black;
+  margin-bottom: 10%;
+  padding-bottom: 3%;
+}
+/* botões do menu de opções */
+.btn-option{
+  margin-bottom: 5%;
+  background-color: bisque;
+}
+/* Botão para sair do menu */
+.btn-sair{
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  font-size: 12pt;
+}
+#footer{
+  margin-top: 80%;
+  padding-top: 3%;
+  border-top: solid 1px;
+  border-top-color: black;
+}
+
+/* formatando a session menu */
+#menu{
+  background-color: white;
+  padding-top: 3%;
+}

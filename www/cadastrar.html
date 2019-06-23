@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+
+    <!-- Biblioteca bootstrap css -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <!-- Arquivo de estilização do app -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Arquivo de estilização da página de cadastro -->
+    <link rel="stylesheet" href="css/cadastrar.css">
+
+    <!-- Biblioteca jquery -->
+    <script src="components/jquery-3.4.1.min.js"></script>
+
+    <!-- Biblioteca bootstrap js -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <!-- Arquivo de funções do app -->
+    <script src="components/app.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        ConfigurarPagina();
+      });
+    </script>
+</head>
+<body>
+    <div class="form" id="form1">
+      <div class="container inicio">
+
+        <div class="row cabecalho">
+          <div class="col-xs-12">
+            <h3>
+              <b>Passo 1: </b>
+              <p>Cadastre um código</p>
+            </h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <button class="btn btn-default" id="btnScan">
+                <img src="img/icone.png" class="img-responsive" id="icon">
+              </button>
+            </div>
+
+            <br>
+
+            <button class="btn btn-danger" id="btnCancelar" data-toggle="modal" data-target="#popup">Cancelar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="form" id="form2">
+      <div class="container inicio">
+
+        <div class="row cabecalho">
+          <div class="col-xs-12">
+            <h3>
+              <b>Passo 2:</b>
+              <p>Informações do Produto</p>
+            </h3>
+          </div>
+        </div>
+
+          <div class="row">
+
+            <div class="col-xs-1"></div>
+
+            <div class="col-xs-10">
+                <label>Modelo</label>
+                <input type="text" class="form-control" id="modelo" placeholder="Digite o nome do produto">
+                
+                <br>
+
+                <label>Fabricante</label>
+                <input type="text" class="form-control" id="fabricante" placeholder="Digite o fabricante do produto">
+                
+                <br>
+
+              </div>
+          </div>
+
+          <div class="col-xs-1"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Janela de popup -->
+    <div id="popup" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h3 class="modal-title">Cancelar</h3>
+          </div>
+
+          <div class="modal-body">
+            <h4 class="text-center">Tem certeza?</h4>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-primary" id="cancelar">Sim</button>
+            <button class="btn btn-primary" data-dismiss="modal">Não</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
