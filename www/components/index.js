@@ -2,15 +2,15 @@
 
 // Funções para redirecionar página
 $(document).on('click', '#cadastrar', function(){
-  window.location = "cadastrar.html";
+  location.replace("cadastrar.html");
 });
 
 $(document).on('click', '#lista', function(){
-  window.location = "lista.html";
+  location.replace("lista.html");
 });
 
 $(document).on('click', '#peckins', function(){
-  window.location = "peckins.html";
+  location.replace("peckins.html");
 });
 
 // Abrindo menu ao clickar em "Começar"

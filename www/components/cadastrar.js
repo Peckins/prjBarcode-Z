@@ -4,6 +4,10 @@ var codigo; // variável para armazenar o código de barras
 var modelo, fabricante, descricao, processador, sistema, memoria, tamanhoTela, wifi;
 var foto = null;
 
+$(document).on('click', '#sair', function(){
+  location.replace("index.html");
+});
+
 // Abrindo o scanner da página cadastrar.html
 $(document).on('click', '#btnScan', function(){
   // ativando o scaner
@@ -47,7 +51,36 @@ $(document).on('click', '#page3', function(){
 });
 
 // Ativando a câmera
-$(document).on('click', '#btnCamera', function(){
+$(document).on('click', '#camera', function(){
+  navigator.camera.getPicture(onSuccess, onFail, {
+    quality: 50,
+    destinationType: Camera.DestinationType.DATA_URL
+  });
+
+  function onSuccess(imageData){
+    foto = "data:image/jpeg;base64" + imageData;
+  }
+  function onFail(message){
+    navigator.notification.alert('Falhou porque: ' + message);
+  }
+  $('#foto').modal('hide');
+});
+
+// Pegando imagem da galeria
+$(document).on('click', '#album', function(){
+  navigator.camera.getPicture(onSuccess, onFail, {
+    quality: 50,
+    destinationType: Camera.DestinationType.DATA_URL,
+    sourceType: Camera.PictureSourceType.PHOTOLIBRARY
+  });
+
+  function onSuccess(imageData){
+    foto = "data:image/jpeg;base64" + imageData;
+  }
+  function onFail(message){
+    navigator.notification.alert('Falhou porque: ' + message);
+  }
+  $('#foto').modal('hide');
 });
 
 // mudando para a etapa 4
@@ -64,4 +97,3 @@ $(document).on('click', '#page4', function(){
     })
   }
 });
-

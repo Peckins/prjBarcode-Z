@@ -71,3 +71,8 @@ body{
 #btnCamera{
   margin-bottom: 5%;
 }
+
+/* travando formulários de preenchimento */
+.form{
+  background-attachment: fixed;
+}

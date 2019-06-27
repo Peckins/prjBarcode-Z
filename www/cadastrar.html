@@ -122,7 +122,7 @@
 
             <div class="col-xs-10">
                 <label>Descrição geral</label>
-                <input type="text" class="form-control" id="descricao" placeholder="Descrição do produto">
+                <textarea class="form-control" id="descricao" placeholder="Descrição do produto"></textarea>
 
                 <br>
 
@@ -143,6 +143,91 @@
         </div>
       </div>
 
+      <!-- quarta página -->
+      <div class="form" id="form4">
+        <div class="container inicio">
+
+          <div class="row cabecalho">
+            <div class="col-xs-12">
+              <h3>
+                <b>Passo 4:</b>
+                <p>Especificações do Produto</p>
+              </h3>
+            </div>
+          </div>
+
+            <div class="row">
+
+              <div class="col-xs-1"></div>
+
+              <div class="col-xs-10">
+                  <label>Processador</label>
+                  <input type="text" class="form-control" id="processador" placeholder="Digite o nome do processador">
+
+                  <br>
+
+                  <label>Sistema Operacional</label>
+                  <input type="text" class="form-control" id="fabricante" placeholder="Nome do sistema operacional">
+
+                  <br>
+
+                  <label>Memória Flash</label>
+                  <input type="number" step="any" class="form-control" id="memoria" placeholder="Tamanho da memória em Gb">
+
+                  <br>
+
+                  <button class="btn btn-primary" id="page5">Próximo</button>
+                  <button class="btn btn-danger" data-toggle="modal" data-target="#popup">Cancelar</button>
+
+                </div>
+            </div>
+
+            <div class="col-xs-1"></div>
+          </div>
+        </div>
+
+        <!-- quinta página -->
+        <div class="form" id="form5">
+          <div class="container inicio">
+
+            <div class="row cabecalho">
+              <div class="col-xs-12">
+                <h3>
+                  <b>Passo 5:</b>
+                  <p>Wifi e câmera</p>
+                </h3>
+              </div>
+            </div>
+
+              <div class="row">
+
+                <div class="col-xs-1"></div>
+
+                <div class="col-xs-10">
+                    <label>Wifi</label>
+                    <select class="form-control" id="wifi">
+                      <option selected>Selecione</option>
+                      <option value="true">Sim</option>
+                      <option value="false">Não</option>
+                    </select>
+
+                    <br>
+
+                    <label>Quantidade de câmeras</label>
+                    <input type="number" maxlength="3" class="form-control" id="qtdCameras" placeholder="Número de câmeras">
+
+                    <br>
+
+                    <button class="btn btn-primary" id="page5">Próximo</button>
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#popup">Cancelar</button>
+
+                  </div>
+              </div>
+
+              <div class="col-xs-1"></div>
+            </div>
+          </div>
+
     </div>
 
     <!-- Janela de popup -->
@@ -159,14 +244,14 @@
           </div>
 
           <div class="modal-footer">
-            <a class="btn btn-danger" href="index.html">Sim</a>
+            <button class="btn btn-danger" id="sair">Sim</button>
             <button class="btn btn-primary" data-dismiss="modal">Não</button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Janela de foto -->
+    <!-- Janela de opções de foto -->
     <div id="foto" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
